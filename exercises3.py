@@ -40,3 +40,9 @@
 #     remaining_cookies = 12 - int(eaten)
 #     print("There are {} cookies left.".format(remaining_cookies))
 # cookies() 
+
+def what_year(): 
+    age = input("What is your age? \n")
+    year = 2018 - int(age)  
+    print("You were born in {}".format(year))
+what_year()
