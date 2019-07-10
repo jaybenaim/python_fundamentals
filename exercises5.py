@@ -1,22 +1,29 @@
 
 distance = 0
+energy = 10
+spacer = "\n------------------------------------------------------------------------------ \n"
+show_info = print(spacer + "\tDistance from home is {}km\t Your energy level is : {}".format(distance, energy))
+print("Your energy level is full at 10. \n")
 
 while distance >= 0:  
-    choice = input("Pick a choice, type 'walk' or 'run' \n").lower()
+    choice = input("\nPick a choice, type 'walk' or 'run' \n").lower()
     
     if choice == 'walk':
         distance += 1
-        print("Distance from home is {}km".format(distance))
+        energy += 1
+        print(spacer + "\tDistance from home is {}km\t Your energy level is : {}".format(distance, energy))
     elif choice == 'run':
         distance += 5 
-        print("Distance from home is {}km".format(distance))
+        energy -= 2
+        print(spacer + "\tDistance from home is {}km\t Your energy level is : {}".format(distance, energy))
+        if energy <= 0: 
+            print(spacer + "You have no energy, walk to cool off!")
+            break
     elif choice == 'go home': 
-        print("Distance to home is {}km".format(distance))
+        print(spacer + "\tDistance from home is {}km\t Your energy level is : {}".format(distance, energy))
         break 
     else: 
         print("Something went wrong")
-        print("Distance to home is {}km".format(distance))
-
-
+        print(spacer + "\tDistance from home is {}km\t Your energy level is : {}".format(distance, energy))
 
 
