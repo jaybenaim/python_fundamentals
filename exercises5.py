@@ -27,4 +27,3 @@ while distance >= 0:
         print("Something went wrong")
         print(spacer + "\tDistance from home is {}km\t Your energy level is : {}".format(distance, energy) + spacer)
 
-

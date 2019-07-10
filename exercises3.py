@@ -41,11 +41,6 @@
 #     print("There are {} cookies left.".format(remaining_cookies))
 # cookies() 
 
-# def what_year(): 
-#     age = input("What is your age? \n")
-#     year = 2018 - int(age)  
-#     print("You were born in {}".format(year))
-# what_year()
 
 # my_number = 5
 
@@ -73,13 +68,18 @@
 #     print("{} is negative".format(number)) 
 #     print(number + " is negative")
 
-x = input("Enter an x-coordinate")
-y = input("Enter an y-coordinate")
+# x = input("Enter an x-coordinate")
+# y = input("Enter an y-coordinate")
 
-if int(x) > int(y): 
-    print("x is greater than y!")
-elif x < y: 
-    print("x is less than y!")
-else: 
-    print("x is equal to y!")
+# if int(x) > int(y): 
+#     print("x is greater than y!")
+# elif x < y: 
+#     print("x is less than y!")
+# else: 
+#     print("x is equal to y!")
     
+def what_year(): 
+    age = input("What is your age? \n")
+    year = 2019 - int(age)  
+    print("You were born in {}".format(year))
+what_year()

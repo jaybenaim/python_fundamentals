@@ -1,15 +1,16 @@
 # def total_tip(): 
-total = 55
-tip = 55 * .15
-print(total + tip)
-
+# total = 55
+# tip = 55 * .15
+# print(total + tip)
 # total_tip() 
 
 # def integar_concat(): 
-#     text = "4"
-#     num = 3
-#     con = int(text) + str(num) 
-#     print(con)
+#     text = "I am "
+#     num = 24
+#     text2 = " years old." 
+#     concat = text + str(num) + text2
+#     print(concat)  
+#     print(type(str(num)))
 
 # integar_concat() 
 
@@ -21,8 +22,9 @@ print(total + tip)
 # third_challenge()
 
 # def fourth(): 
-#     if(10 < 20 and 30 < 20) or not(10 ==11):
-#         print("false")
+#     if(10 < 20 and 30 < 20) or not(10 == 11):
+#         print("true")
 #     else: 
-#         print('true')
+#         print('false')
 # fourth() 
+ 
