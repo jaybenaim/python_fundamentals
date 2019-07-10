@@ -1,4 +1,4 @@
-secret_number = 43
+secret_number = 44
 
 def guessed(): 
     user_guess = input("Guess my secret number!\n")
@@ -6,7 +6,7 @@ def guessed():
 
     if guess == secret_number: 
         print("You Win!")
-    elif guess == 44 or guess == 42:
+    elif guess == 43 or guess == 45:
         print("So close!")
         guessed()
     else: 
@@ -15,3 +15,6 @@ def guessed():
         
     
 guessed()
+
+
+
