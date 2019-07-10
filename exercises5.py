@@ -4,7 +4,7 @@ energy = 10
 eat = (energy + 2) 
 spacer = "\n------------------------------------------------------------------------------ \n"
 
-print("Your energy level is full at 10. \n")
+print("Your energy level is full at 10. \n Eat or walk to gain energy. \n")
 
 while distance >= 0:  
     choice = input("\nPick a choice, type 'walk' or 'run' \n").lower()
@@ -23,6 +23,9 @@ while distance >= 0:
     elif choice == 'go home': 
         print(spacer + "\tDistance from home is {}km\t Your energy level is : {}".format(distance, energy) + spacer)
         break 
+    elif choice == "eat": 
+        energy += 2
+        print(spacer + "\tDistance from home is {}km\t Your energy level is : {}".format(distance, energy) + spacer)
     else: 
         print("Something went wrong")
         print(spacer + "\tDistance from home is {}km\t Your energy level is : {}".format(distance, energy) + spacer)
