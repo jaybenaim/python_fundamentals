@@ -1,8 +1,9 @@
 
 distance = 0
 energy = 10
+eat = (energy + 2) 
 spacer = "\n------------------------------------------------------------------------------ \n"
-show_info = print(spacer + "\tDistance from home is {}km\t Your energy level is : {}".format(distance, energy))
+
 print("Your energy level is full at 10. \n")
 
 while distance >= 0:  
@@ -18,7 +19,7 @@ while distance >= 0:
         print(spacer + "\tDistance from home is {}km\t Your energy level is : {}".format(distance, energy))
         if energy <= 0: 
             print(spacer + "You have no energy, walk to cool off!")
-            break
+            break # quits the program needs fix 
     elif choice == 'go home': 
         print(spacer + "\tDistance from home is {}km\t Your energy level is : {}".format(distance, energy))
         break 
