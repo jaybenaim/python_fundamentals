@@ -1,7 +1,7 @@
 # def total_tip(): 
-#     tip = 55
-#     tax = 55 * .15
-#     print(tip + tax)
+total = 55
+tip = 55 * .15
+print(total + tip)
 
 # total_tip() 
 
